@@ -4,11 +4,12 @@ import Footer from "./Footer";
 import Note from "./Note";
 import notes from "../notes";
 
-const newArray = notes.map(note => <Note title={note.title} content={note.content} />) 
 
 
 function App(){
-    
+
+    const newArray = notes.map(note => <Note title={note.title} content={note.content} />) 
+
     return <div>
             <Header />
             {newArray}
